@@ -22,12 +22,11 @@ async def on_message(message):
     if message.content == f'{PREFIX}call':
         await message.channel.send("callback!")
         
-    if message.content == f'{PREFIX}안녕':
-        await message.channel.send("만나서 반가워( ´-ㅅ•)▄︻┻┳══━一")        
+       
 
 
     if message.content.startswith(f'{PREFIX}hello'):
-        await message.channel.send('Hello!')
+        await message.channel.send('Hello!( ´-ㅅ•)▄︻┻┳══━一')
 
 
 try:
