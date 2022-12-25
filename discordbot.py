@@ -28,7 +28,18 @@ async def on_message(message):
     if message.content.startswith(f'{PREFIX}hello'):
         await message.channel.send('Hello!( ´-ㅅ•)▄︻┻┳══━一')
 
+    if message.content.startswith(f'{PREFIX}bye'):
+        await message.channel.send('잘가!')
+        
 
+    if message.content.startswith(f'{PREFIX}hello'):
+        await message.channel.send('Hello!( ´-ㅅ•)▄︻┻┳══━一')        
+
+    if message.content.startswith(f'{PREFIX}hello'):
+        await message.channel.send('Hello!( ´-ㅅ•)▄︻┻┳══━一')
+
+    if message.content.startswith(f'{PREFIX}hello'):
+        await message.channel.send('Hello!( ´-ㅅ•)▄︻┻┳══━一')
 try:
     client.run(TOKEN)
 except discord.errors.LoginFailure as e:
