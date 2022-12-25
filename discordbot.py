@@ -31,7 +31,6 @@ async def on_message(message):
     if message.content.startswith(f'{PREFIX}'):
         await message.channel.send('잘가! 기다리고 있을게')
         
-
     if message.content.startswith(f'{PREFIX}바보'):
         await message.channel.send('바보 으느르그...')        
 
