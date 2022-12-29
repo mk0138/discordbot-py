@@ -39,6 +39,15 @@ async def on_message(message):
 
     if message.content.startswith(f'{PREFIX}뭐해'):
         await message.channel.send('너 생각 ERROR: 110111110011001101110001111110111001110111')
+        
+        if message.content.startswith(f'{PREFIX}굴라그'):
+        await message.channel.send('한서고 굴라그..? 아니면 나니의 굴라그..?')
+        
+            if message.content.startswith(f'{PREFIX}생일'):
+        await message.channel.send('생일 축하해~ 좋은 하루 보냈으면 좋겠다 ㅎㅎ')
+        
+            if message.content.startswith(f'{PREFIX}약속잡기'):
+        await message.channel.send('오늘은 할 일이 있어서..내일은 쉬어야해서..그 다음은 위의 일정을 반복해야해서...')
 try:
     client.run(TOKEN)
 except discord.errors.LoginFailure as e:
