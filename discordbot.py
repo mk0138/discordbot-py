@@ -46,8 +46,28 @@ async def on_message(message):
     if message.content.startswith(f'{PREFIX}생일'):
         await message.channel.send('생일 축하해~ 좋은 하루 보냈으면 좋겠다 ㅎㅎ')
         
-    if message.content.startswith(f'{PREFIX}약속잡기'):
-        await message.channel.send('오늘은 할 일이 있어서..내일은 쉬어야해서..그 다음은 위의 일정을 반복해야해서...')
+    if message.content.startswith(f'{PREFIX}사다리게임'):
+        await message.channel.send(import random as r  
+
+n=int(input('인원을 입력 : '))
+
+#인원만큼 이름과 상품을 입력 받아 리스트로 만들기
+print('이름을 입력 하세요 : ')
+name=[]
+for i in range(n):
+    name.append(input('    %2d: '%(i+1)))
+
+print('대상을 입력 하세요 : ')
+pum=[]
+for i in range(n):
+    pum.append(input('    %2d: '%(i+1)))
+
+# 대상 석기
+r.shuffle(pum)
+
+# 출력
+for i in range(n):
+    print(name[i],'------',pum[i]))
 try:
     client.run(TOKEN)
 except discord.errors.LoginFailure as e:
